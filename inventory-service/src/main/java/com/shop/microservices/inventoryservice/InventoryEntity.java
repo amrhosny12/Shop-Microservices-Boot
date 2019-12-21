@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
@@ -18,7 +19,7 @@ import io.swagger.annotations.ApiModelProperty;
 public class InventoryEntity {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
 	
 	@Size(min=2, message="Name should be at least 2 characters")
