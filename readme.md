@@ -1,4 +1,4 @@
-# Shop Application Microservices built on Spring Boot 2.1.11 SNAPSHOT
+# Shop Application Microservices built on Spring Boot
 
 ## List Of Services & Framworks Used
 - Inventory Service - Application microservice utilizing JPA and MySQL for data persistent 
